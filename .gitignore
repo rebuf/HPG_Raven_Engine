@@ -1,0 +1,33 @@
+# Executables and VS files
+bin/
+bin-int/
+build/
+
+# Changes at every compilation
+gameProject/Raven.log
+gameProject/imgui.ini
+
+# Directories
+/RavenEngine/Build/
+/RavenEngine/.vs/
+
+/RavenEngine/x64/
+
+# Project and git
+!.gitignore
+!*.sln
+!*.bat
+!*.natvis
+
+# Source
+!*.cpp
+!*.cc
+!*.h
+!*.hpp
+!*.txt
+!*.glsl
+!*.vert
+!*.frag
+!*.geom
+!*.lua
+

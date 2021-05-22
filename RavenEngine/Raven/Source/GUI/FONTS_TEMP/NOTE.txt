@@ -1,0 +1,1 @@
+This folder is temporary and strictly for testing purposes when using fonts in the GUI

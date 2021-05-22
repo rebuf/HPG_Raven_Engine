@@ -1,0 +1,235 @@
+{
+    "value0": {
+        "Layout Name": "TestLayout",
+        "Widgets": [
+            {
+                "Widget Name": "HealthPanel",
+                "Widget Config": {
+                    "Widget Type": 1,
+                    "Background Colour": {
+                        "value0": 0.30000001192092898,
+                        "value1": 0.30000001192092898,
+                        "value2": 0.30000001192092898,
+                        "value3": 0.30000001192092898
+                    },
+                    "Border Colour": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "Padding Width": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.949999988079071
+                    },
+                    "Size": {
+                        "value0": 0.12999999523162843,
+                        "value1": 0.05000000074505806
+                    },
+                    "Rounding": 0.0,
+                    "Text Colour": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "Font Size": 0.0,
+                    "Text Alignment": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Button Hover Colour": {
+                        "value0": 0.25999999046325686,
+                        "value1": 0.5899999737739563,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Button Active Color": {
+                        "value0": 0.05999999865889549,
+                        "value1": 0.5299999713897705,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Image File Path": "",
+                    "Font File Path": ""
+                },
+                "Text": ""
+            },
+            {
+                "Widget Name": "TestText",
+                "Widget Config": {
+                    "Widget Type": 3,
+                    "Background Colour": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 0.0
+                    },
+                    "Border Colour": {
+                        "value0": 0.4300000071525574,
+                        "value1": 0.4300000071525574,
+                        "value2": 0.5,
+                        "value3": 0.5
+                    },
+                    "Padding Width": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Size": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Rounding": 7.0,
+                    "Text Colour": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "Font Size": 40.0,
+                    "Text Alignment": {
+                        "value0": 0.8999999761581421,
+                        "value1": 0.0
+                    },
+                    "Button Hover Colour": {
+                        "value0": 0.25999999046325686,
+                        "value1": 0.5899999737739563,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Button Active Color": {
+                        "value0": 0.05999999865889549,
+                        "value1": 0.5299999713897705,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Image File Path": "",
+                    "Font File Path": "./layouts/fonts/DroidSans.ttf"
+                },
+                "Text": "100 HP"
+            },
+            {
+                "Widget Name": "TestImage",
+                "Widget Config": {
+                    "Widget Type": 5,
+                    "Background Colour": {
+                        "value0": 0.05999999865889549,
+                        "value1": 0.05999999865889549,
+                        "value2": 0.05999999865889549,
+                        "value3": 0.9399999976158142
+                    },
+                    "Border Colour": {
+                        "value0": 0.4300000071525574,
+                        "value1": 0.4300000071525574,
+                        "value2": 0.5,
+                        "value3": 0.5
+                    },
+                    "Padding Width": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.10000000149011612
+                    },
+                    "Size": {
+                        "value0": 0.25,
+                        "value1": 0.800000011920929
+                    },
+                    "Rounding": 7.0,
+                    "Text Colour": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "Font Size": 0.0,
+                    "Text Alignment": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Button Hover Colour": {
+                        "value0": 0.25999999046325686,
+                        "value1": 0.5899999737739563,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Button Active Color": {
+                        "value0": 0.05999999865889549,
+                        "value1": 0.5299999713897705,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Image File Path": "./assets/textures/heart.png",
+                    "Font File Path": ""
+                },
+                "Text": "Test button"
+            },
+            {
+                "Widget Name": "/HealthPanel",
+                "Widget Config": {
+                    "Widget Type": 2,
+                    "Background Colour": {
+                        "value0": 0.30000001192092898,
+                        "value1": 0.30000001192092898,
+                        "value2": 0.30000001192092898,
+                        "value3": 0.30000001192092898
+                    },
+                    "Border Colour": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "Padding Width": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.949999988079071
+                    },
+                    "Size": {
+                        "value0": 0.12999999523162843,
+                        "value1": 0.05000000074505806
+                    },
+                    "Rounding": 0.0,
+                    "Text Colour": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "Font Size": 0.0,
+                    "Text Alignment": {
+                        "value0": 0.0,
+                        "value1": 0.0
+                    },
+                    "Button Hover Colour": {
+                        "value0": 0.25999999046325686,
+                        "value1": 0.5899999737739563,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Button Active Color": {
+                        "value0": 0.05999999865889549,
+                        "value1": 0.5299999713897705,
+                        "value2": 0.9800000190734863,
+                        "value3": 1.0
+                    },
+                    "Image File Path": "",
+                    "Font File Path": ""
+                },
+                "Text": ""
+            }
+        ]
+    }
+}
