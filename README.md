@@ -21,7 +21,7 @@ The Engine have so many features this is a snapshot of them
 Compute lighting using a physically based model similar to UE4. Using Real Shading in Unreal Engine 4, by Brian Karis, Epic Games as a reference for our lighting model. pre-filter a spherical images or the current captured sky for IBL to provide beautiful reflection and indirect lighting.
 
 
-### 2. Advacne Materail System & Custom Shaders.
+### 2. Advance Materail System & Custom Shaders.
 Provide the ability to create materials with custom shader that override a function in the fragment and vertex shader to add advanced techniques. Whether you want to do simple UV scaling or grass wind animation you can easily do so using the material system.
 
 ### 3. SSAO
