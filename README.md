@@ -13,7 +13,6 @@ The Engine developed using c++. The Renderer was made completely from scratch us
 
 
 ## Features
-The Engine have so many features this is a snapshot of them
 
 ![Screenshot (15)](https://user-images.githubusercontent.com/56574326/119246934-9597ed00-bb7d-11eb-8406-562df6b51526.png)
 
