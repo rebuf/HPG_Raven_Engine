@@ -11,6 +11,11 @@ for the High-Performance Graphics and Games Engineering group project module. [T
 
 The Engine developed using c++. The Renderer was made completely from scratch using OpenGL 4.5, the renderer only uses an opengl extension loader library GLEW. The renderer is designed with performance and extensibility in mind, it performes culling, render batching based on shader and materials, instancing for terrain foliage and more. The renderer have miltiple passess Deferred(opaque & masked), and Forward(translucent).
 
+<br>
+Video for the engine rendering:<br>
+https://www.youtube.com/watch?v=oSnOZ_4sMig
+<br>
+
 
 ## Features
 
