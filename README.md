@@ -27,28 +27,39 @@ Compute lighting using a physically based model similar to UE4. Using Real Shadi
 
 ### 2. Advance Materail System & Custom Shaders.
 Provide the ability to create materials with custom shader that override a function in the fragment and vertex shader to add advanced techniques. Whether you want to do simple UV scaling or grass wind animation you can easily do so using the material system.
-
-### 3. SSAO
 <br>
 
-![Editor_Sky_Anim](https://user-images.githubusercontent.com/56574326/119244032-3d082600-bb64-11eb-9da2-635607da0a4f.png)
+
+### 3. SSAO
+![Bathscene](https://user-images.githubusercontent.com/56574326/119989836-8b338400-bfbf-11eb-8896-c07049127a34.jpg)
+Screen space ambient occlusion (SSAO), gives the scene more depth and natural ambient light feel.
+<br>
+
+
 ### 4. Skeletal Animation
+![Editor_Sky_Anim](https://user-images.githubusercontent.com/56574326/119244032-3d082600-bb64-11eb-9da2-635607da0a4f.png)
+
 Play skeletal animation on skinned meshes and build animation state machine using the animation node editor.
 
 ### 5. Sun Shadow with cascading shadow maps.
 Sun shadow with up to 4 cascading shadow maps. Useful for large terrain scenes where you want to have shadows viewed from very far distances and still maintain high resolution for closer objects.
 
 ### 6. Physically Based Sky.
+![ezgif-3-55020e16fc70](https://user-images.githubusercontent.com/56574326/119991211-224d0b80-bfc1-11eb-9cad-c0ba16a1b5ad.gif)
+
 Compute the sky using a physically based module that approximate Rayleigh and Mie scattering. The approch used was provided by Sean O'Neil, Chapter 16. Accurate Atmospheric Scattering, GPU Gems 2. The approach used is compute everything at run time inside one shader without any pre-calculation. The sky is also captured and filtered for IBL whenever its edited or updated, this provides an environment light source that reflects the current sky.
 <br><br>
 
-![TES_2_c](https://user-images.githubusercontent.com/56574326/119245319-5020f300-bb70-11eb-8620-6286dac25f0b.png)
-### 7. Procedural and Tessellated Terrain.
-Generate terrain procedurally and fill it with grass and trees using our foliage system. The terrain uses TCS & TES shaders provided by OpenGL 4.*, the tessellation levels of the terrain mesh is computed based on its size in screen coordinate.
-<br>
 
-![Foliage_ _Sky](https://user-images.githubusercontent.com/56574326/119244055-7e003a80-bb64-11eb-9e8d-e8fd104698d6.png)
+### 7. Procedural and Tessellated Terrain.
+![TES_2_c](https://user-images.githubusercontent.com/56574326/119245319-5020f300-bb70-11eb-8620-6286dac25f0b.png)
+
+Generate terrain procedurally and fill it with grass and trees using our foliage system. The terrain uses TCS & TES shaders provided by OpenGL 4.*, the tessellation levels of the terrain mesh is computed based on its size in screen coordinate.
+</br></br>
+
 ### 8. Instanced Foliage System.
+![Foliage_ _Sky](https://user-images.githubusercontent.com/56574326/119244055-7e003a80-bb64-11eb-9e8d-e8fd104698d6.png)
+
 A system for adding foliage layers on top of the terrain, each layer will be rendered using OpenGL instanced rendering in a single draw call. The system also provide culling based on terrain bins and view distance.
 
 
