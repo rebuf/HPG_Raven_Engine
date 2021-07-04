@@ -69,13 +69,12 @@ void main()
 	
 	// Tangent Space -> World.
 	random = normalize(random - dot(random, N) * N);
-    vec3 B = normalize( cross(random, N) );
+	vec3 B = normalize( cross(random, N) );
 	mat3 TBN = mat3(random, B, N);
 	
 	//
 	float SSAO = 0.0;
-	float gds = 1.0;// smoothstep(0.05, 1.0, gDepth * 0.5 + 0.25);
-	float radius = 1.2;
+	float radius = 1.5;
 	float bias = 0.025;
 	
 	
@@ -83,7 +82,7 @@ void main()
 	{
 		// Sample Tangent->World
 		vec3 V = TBN * inSamples[i];
-		V = P + V * radius * gds; 
+		V = P + V * radius; 
 		
 		// Sample to screen space...
 		vec4 sampleOffset = vec4(V, 1.0);
@@ -94,13 +93,15 @@ void main()
 		// Range & Test Depth...
 		float gDepthSample = texture(inDepth, sampleOffset.xy * uvScale).r;
 		vec3 gN = texture(inNormal,  sampleOffset.xy * uvScale).xyz;
-		float gBias = bias * dot(gN, N) + 0.0005;
+		float gBias = dot(gN, N);
+		gBias = gBias > 0.95 ? 1.0 : mix(0.025, 0.001, gBias * gBias);  
+		
 		
 		float gDepthSampleLinaer = DepthToLinaer(gDepthSample);
 		
 		float range = smoothstep(1.0, 0.0, (radius * 0.5) / abs(gDepthLinear - gDepthSampleLinaer)); // Scale based on distance
 		
-		SSAO += (gDepthSample >= gDepth - gBias ? 1.0 : range);
+		SSAO += (gDepthSampleLinaer >= gDepthLinear - gBias ? 1.0 : range);
 	}  
 	
 
